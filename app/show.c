@@ -21,7 +21,7 @@ static FILE *f;
 void show(text txt, int par)
 {
 
-    f = fopen("shownum", "w");
+    f = fopen("tests/shownum", "w");
     /* Применяем функцию show_line к каждой строке текста */
     process_forward(txt, show_line, &par);
     fclose(f);
