@@ -8,7 +8,7 @@ addons:
   sonarcloud:
     organization: "djon-wick-github"
     token:
-      secure: ad78a16ac90d4153c6eda9a23e52afff4d805488
+      secure: $SONAR_TOKEN
 
 script:
   - qmake
