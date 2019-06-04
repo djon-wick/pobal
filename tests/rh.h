@@ -13,7 +13,7 @@ TEST(rh1, t1)
     text txt = create_text();
     FILE *f;
     char buf[MAXLINE + 1];
-    char filepath[] = "build-qmake-gtest-Desktop_Qt_5_12_0_MinGW_64_bit-Debug/app/tuda";
+    char filepath[] = "tests/tuda";
 
     load(txt, filepath);
 
@@ -24,7 +24,7 @@ TEST(rh1, t1)
     int index = 0, count = 0;
 
     /* Открываем файл для чтения, контролируя ошибки */
-    if ((f = fopen("build-qmake-gtest-Desktop_Qt_5_12_0_MinGW_64_bit-Debug/app/tuda", "r")) == NULL) {
+    if ((f = fopen("tests/tuda", "r")) == NULL) {
         FAIL();
     }
 
