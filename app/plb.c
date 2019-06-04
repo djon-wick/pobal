@@ -18,7 +18,7 @@
 void plb(text txt)
 {
     FILE *f;
-    f = fopen("plb_test", "w");
+    f = fopen("tests/plb_test", "w");
     node *lt = txt->begin;
     int index = 0;
     int i;
