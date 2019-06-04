@@ -32,14 +32,15 @@ TEST(shownum1, t1)
 
     while (fgets(buf, MAXLINE, f)) {
         EXPECT_EQ(atoi(buf), index);
-        if (current && index < 5){
+        if (current /*&& index < 5*/){
                 EXPECT_EQ(strlen(current->contents), strlen(buf) - 2);
 
                 /* Продвигаемся к следующему элементу */
                 current = current->next;
-        } else if (index == 5) {
-                    EXPECT_EQ(strlen(current->contents), strlen(buf) - 3);
-               }
+         } 
+ //           else if (index == 5) {
+//                     EXPECT_EQ(strlen(current->contents), strlen(buf) - 3);
+//                }
         index++;
     }
 
