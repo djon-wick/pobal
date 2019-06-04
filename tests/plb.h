@@ -13,7 +13,7 @@ TEST(plb1, t1)
     text txt = create_text();
     FILE *f;
     char buf[MAXLINE + 1];
-    char filepath[] = "build-qmake-gtest-Desktop_Qt_5_12_0_MinGW_64_bit-Debug/app/tuda";
+    char filepath[] = "tests/tuda";
 
     load(txt, filepath);
 
@@ -21,7 +21,7 @@ TEST(plb1, t1)
     plb(txt);
 
     /* Открываем файл для чтения, контролируя ошибки */
-    if ((f = fopen("plb_test", "r")) == NULL) {
+    if ((f = fopen("tests/plb_test", "r")) == NULL) {
         FAIL();
     } else
         fgets(buf, MAXLINE, f);
@@ -38,7 +38,7 @@ TEST(plb2, t1)
     text txt = create_text();
     FILE *f;
     char buf[MAXLINE + 1];
-    char filepath[] = "build-qmake-gtest-Desktop_Qt_5_12_0_MinGW_64_bit-Debug/app/tuda";
+    char filepath[] = "tests/tuda";
 
     load(txt, filepath);
 
@@ -47,7 +47,7 @@ TEST(plb2, t1)
     plb(txt);
 
     /* Открываем файл для чтения, контролируя ошибки */
-    if ((f = fopen("plb_test", "r")) == NULL) {
+    if ((f = fopen("tests/plb_test", "r")) == NULL) {
         FAIL();
     } else
         fgets(buf, MAXLINE, f);
