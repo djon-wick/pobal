@@ -23,7 +23,7 @@ TEST(load1, t1)
     load(txt, filepath);
 
     /* Открываем файл для чтения, контролируя ошибки */
-    if ((f = fopen("tests/kaput", "r")) == NULL) {
+    if ((f = fopen("tests/tuda", "r")) == NULL) {
         FAIL();
     }
 
