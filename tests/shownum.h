@@ -21,7 +21,7 @@ TEST(shownum1, t1)
     show(txt, 1);
 
     /* Открываем файл для чтения, контролируя ошибки */
-    if ((f = fopen("shownum", "r")) == NULL) {
+    if ((f = fopen("tests/shownum", "r")) == NULL) {
         FAIL();
     }
 
